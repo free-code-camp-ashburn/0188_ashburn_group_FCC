@@ -192,6 +192,7 @@ body {
   margin: 10px;
   padding: 10px;
   background: lightslategray;
+  border-radius: 10px;
 }
 #main > * {
   margin: 10px;
@@ -207,7 +208,16 @@ body {
   text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
 }
 
-#hook {
+#slogan {
+  background: url('../img/computer-code-1024x767.png');
+  background-size: cover;            
+  background-repeat: no-repeat;
+  background-position: center center;    
+  border-radius: 100px;  
+  max-width: 80vw;
+  margin: 0 auto;
+  display: block;
+
   color: lightgoldenrodyellow;
   font-size: 1.5em;
   text-align: center;
@@ -215,6 +225,7 @@ body {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;   
 }
 .elevate {
+  color: goldenrod;
   font-weight: bold;
   font-size: 2.5em;
   font-family: 'Muli', sans-serif; 

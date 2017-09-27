@@ -176,22 +176,22 @@ template {
 
 * {
   box-sizing: boder-box;
-  /*   outline: 2px solid blue; */
 }
 
 html,
 body {  
   font-family: 'Montserrat', sans-serif;
-
+  font-size: large;
   display: flex;
   justify-content: center;
+  background: black;
 }
 
 #main {
-  width: 80vw;  
+  width: 96vw;  
   margin: 10px;
   padding: 10px;
-  background: lightslategray;
+  background: slategray;
   border-radius: 10px;
 }
 #main > * {
@@ -209,14 +209,15 @@ body {
 }
 
 #slogan {
+  display: block;
+  max-width: 80vw;
+  margin: 0 auto;
   background: url('../img/computer-code-1024x767.png');
   background-size: cover;            
   background-repeat: no-repeat;
   background-position: center center;    
   border-radius: 100px;  
-  max-width: 80vw;
-  margin: 0 auto;
-  display: block;
+  box-shadow: 5px 5px 100px black;
 
   color: lightgoldenrodyellow;
   font-size: 1.5em;
@@ -227,7 +228,7 @@ body {
 .elevate {
   color: goldenrod;
   font-weight: bold;
-  font-size: 2.5em;
+  font-size: 2em;
   font-family: 'Muli', sans-serif; 
 }
 #join {
@@ -238,70 +239,101 @@ button {
   margin: 0 auto;
 }
 
+/* Start */
+
 /*----- Accordion -----*/
 .accordion, .accordion * {
-  -webkit-box-sizing:border-box; 
-  -moz-box-sizing:border-box; 
-  box-sizing:border-box;
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 .accordion {
-  overflow:hidden;
-  box-shadow:0px 1px 3px rgba(0,0,0,0.25);
-  border-radius:3px;
-  background:#f7f7f7;
+  overflow: hidden;
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.25);
+  border-radius: 3px;
+  /* background: #f7f7f7; */
+  background: black;
 }
 
 /*----- Section Titles -----*/
 .accordion-section-title {
-  width:100%;
-  padding:15px;
-  display:inline-block;
-  border-bottom:1px solid #1a1a1a;
-  background:#333;
-  transition:all linear 0.15s;
+  margin: 3px;
+  width: 100%;
+  padding: 15px;
+  display: inline-block;
+  border-bottom: 1px solid #1a1a1a;
+  background: #333;
+  transition: all linear 0.15s;
   /* Type */
-  font-size:1.200em;
-  text-shadow:0px 1px 0px #1a1a1a;
-  color:#fff;
+  font-size: 1.5em;
+  text-shadow: 0px 1px 0px #1a1a1a;
+  color: #fff;
 }
 
 .accordion-section-title.active, .accordion-section-title:hover {
-  background:#4c4c4c;
+  background: #4c4c4c;
   /* Type */
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .accordion-section:last-child .accordion-section-title {
-  border-bottom:none;
+  border-bottom: none;
 }
 
 /*----- Section Content -----*/
 .accordion-section-content {
-  padding:15px;
-  display:none;
+  padding: 15px;
+  display: none;
 }
 
-/* Start */
-
-
 /* Flock */
-#flock {
+#accordion-1 {
   background: lightgreen;
+}
+#flock {  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#flock > * {
+  margin: 10px;
+  padding: 10px;
 }
 
 /* Events */
+#accordion-2 {
+  background: goldenrod;
+}
 #events {
-  background: lightyellow;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#events > * {
+  margin: 10px;
+  padding: 10px;
 }
 
 /* Projects */
-#projects {
+#accordion-3 {
   background: lightcoral;
+}
+#projects {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#projects > * {
+  margin: 10px;
+  padding: 10px;
 }
 
 /* About */
-
+#about-section {
+  display:flex;
+  justify-content: space-around;
+}
 /* Footer */
 footer {
   display: flex;

@@ -180,19 +180,65 @@ template {
 }
 
 html,
-body {
-  height: 100%;
+body {  
+  font-family: 'Montserrat', sans-serif;
+
+  display: flex;
+  justify-content: center;
 }
 
 #main {
-  max-width: 1200px;
-  height: 100%;
-  padding: 1.5em;
-  margin: auto;
-  font-family: helvetica;
+  margin: 10px;
+  padding: 10px;
+  background: lightslategray;
+}
+#main > * {
+  margin: 10px;
+  padding: 10px;
 }
 
-.footer {
+/* Header */
+#title {
+  font-family: 'Muli', sans-serif;  
+  font-size: xx-large;
+  text-align: center;
+  color: goldenrod;
+  text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
+}
+
+#hook {
+  color: lightgoldenrodyellow;
+  font-size: x-large;
+  text-align: center;
+  list-style-type: none;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;   
+}
+.elevate {
+  font-weight: bold;
+}
+
+/* Start */
+
+
+/* Flock */
+#flock {
+  background: lightgreen;
+}
+
+/* Events */
+#events {
+  background: lightyellow;
+}
+
+/* Projects */
+#projects {
+  background: lightcoral;
+}
+
+/* About */
+
+/* Footer */
+footer {
   display: flex;
   justify-content: space-between;
   align-items: center;

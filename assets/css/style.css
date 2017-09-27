@@ -188,6 +188,7 @@ body {
 }
 
 #main {
+  width: 80vw;  
   margin: 10px;
   padding: 10px;
   background: lightslategray;
@@ -200,21 +201,74 @@ body {
 /* Header */
 #title {
   font-family: 'Muli', sans-serif;  
-  font-size: xx-large;
+  font-size: 5em;
   text-align: center;
-  color: goldenrod;
+  color: limegreen;
   text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
 }
 
 #hook {
   color: lightgoldenrodyellow;
-  font-size: x-large;
+  font-size: 1.5em;
   text-align: center;
   list-style-type: none;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;   
 }
 .elevate {
   font-weight: bold;
+  font-size: 2.5em;
+  font-family: 'Muli', sans-serif; 
+}
+#join {
+  text-decoration: none;
+}
+button {
+  display: block;
+  margin: 0 auto;
+}
+
+/*----- Accordion -----*/
+.accordion, .accordion * {
+  -webkit-box-sizing:border-box; 
+  -moz-box-sizing:border-box; 
+  box-sizing:border-box;
+}
+
+.accordion {
+  overflow:hidden;
+  box-shadow:0px 1px 3px rgba(0,0,0,0.25);
+  border-radius:3px;
+  background:#f7f7f7;
+}
+
+/*----- Section Titles -----*/
+.accordion-section-title {
+  width:100%;
+  padding:15px;
+  display:inline-block;
+  border-bottom:1px solid #1a1a1a;
+  background:#333;
+  transition:all linear 0.15s;
+  /* Type */
+  font-size:1.200em;
+  text-shadow:0px 1px 0px #1a1a1a;
+  color:#fff;
+}
+
+.accordion-section-title.active, .accordion-section-title:hover {
+  background:#4c4c4c;
+  /* Type */
+  text-decoration:none;
+}
+
+.accordion-section:last-child .accordion-section-title {
+  border-bottom:none;
+}
+
+/*----- Section Content -----*/
+.accordion-section-content {
+  padding:15px;
+  display:none;
 }
 
 /* Start */

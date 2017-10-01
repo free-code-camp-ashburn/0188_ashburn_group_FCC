@@ -179,8 +179,8 @@ template {
 }
 
 html,
-body {  
-  font-family: 'Montserrat', sans-serif;
+body {
+  font-family: "Montserrat", sans-serif;
   font-size: large;
   display: flex;
   justify-content: center;
@@ -188,7 +188,7 @@ body {
 }
 
 #main {
-  width: 96vw;  
+  width: 96vw;
   margin: 10px;
   padding: 10px;
   background: slategray;
@@ -201,35 +201,38 @@ body {
 
 /* Header */
 #title {
-  font-family: 'Muli', sans-serif;  
+  font-family: "Muli", sans-serif;
   font-size: 5em;
   text-align: center;
   color: limegreen;
-  text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
+  text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777,
+    0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333,
+    0px 8px 7px #001135;
 }
 
 #slogan {
   display: block;
   max-width: 80vw;
   margin: 0 auto;
-  background: url('../img/computer-code-1024x767.png');
-  background-size: cover;            
+  background: url("../img/computer-code-1024x767.png");
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;    
-  border-radius: 100px;  
+  background-position: center center;
+  border-radius: 100px;
   box-shadow: 5px 5px 100px black;
 
   color: lightgoldenrodyellow;
   font-size: 1.5em;
   text-align: center;
   list-style-type: none;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;   
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 .elevate {
   color: goldenrod;
   font-weight: bold;
   font-size: 2em;
-  font-family: 'Muli', sans-serif; 
+  font-family: "Muli", sans-serif;
 }
 #join {
   text-decoration: none;
@@ -242,15 +245,16 @@ button {
 /* Start */
 
 /*----- Accordion -----*/
-.accordion, .accordion * {
-  -webkit-box-sizing: border-box; 
-  -moz-box-sizing: border-box; 
+.accordion,
+.accordion * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 .accordion {
   overflow: hidden;
-  box-shadow: 0px 1px 3px rgba(0,0,0,0.25);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
   /* background: #f7f7f7; */
   background: black;
@@ -271,7 +275,8 @@ button {
   color: #fff;
 }
 
-.accordion-section-title.active, .accordion-section-title:hover {
+.accordion-section-title.active,
+.accordion-section-title:hover {
   background: #4c4c4c;
   /* Type */
   text-decoration: none;
@@ -291,7 +296,7 @@ button {
 #accordion-1 {
   background: lightgreen;
 }
-#flock {  
+#flock {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -331,7 +336,7 @@ button {
 
 /* About */
 #about-section {
-  display:flex;
+  display: flex;
   justify-content: space-around;
 }
 /* Footer */
@@ -354,4 +359,29 @@ footer {
 .social__link {
   font-size: 2em;
   text-decoration: none;
+}
+
+/* members style */
+.member__wrappper {
+  display: flex;
+  padding: 1.5em;
+}
+
+/* text color #586A6A */
+.member__card {
+  background: #e2e2e2;
+  padding: 1.5em;
+  color: #586a6a;
+  margin: 1.5em;
+}
+
+.member__social {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__link {
+  text-decoration: none;
+  color: #586a6a;
 }

@@ -219,6 +219,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   border-radius: 100px;
+  border: 15px solid black;
   box-shadow: 5px 5px 100px black;
 
   color: lightgoldenrodyellow;

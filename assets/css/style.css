@@ -256,7 +256,6 @@ button {
   overflow: hidden;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
-  /* background: #f7f7f7; */
   background: black;
 }
 
@@ -339,6 +338,39 @@ button {
   display: flex;
   justify-content: space-around;
 }
+
+/* Members */
+.member__wrappper {
+  display: flex;
+  padding: 1.5em;
+}
+
+.member__header {
+  text-decoration: underline;
+}
+
+.member__card {
+  background: #e2e2e2;
+  padding: 1.5em;
+  /* background: rgba(51, 51, 51, 0.6); */
+  background: #1a1a1a;
+  border: 15px solid black;
+  color: white;
+  margin: 1.5em;
+  box-shadow: 5px 5px 100px black;
+}
+
+.member__social {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__link {
+  text-decoration: none;
+  color: #586a6a;
+}
+
 /* Footer */
 footer {
   display: flex;
@@ -359,29 +391,4 @@ footer {
 .social__link {
   font-size: 2em;
   text-decoration: none;
-}
-
-/* members style */
-.member__wrappper {
-  display: flex;
-  padding: 1.5em;
-}
-
-/* text color #586A6A */
-.member__card {
-  background: #e2e2e2;
-  padding: 1.5em;
-  color: #586a6a;
-  margin: 1.5em;
-}
-
-.member__social {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-}
-
-.social__link {
-  text-decoration: none;
-  color: #586a6a;
 }

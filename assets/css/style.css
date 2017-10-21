@@ -210,7 +210,7 @@ body {
   background: goldenrod;
   padding: 5px;
 }
-#banner p:last-child {
+#banner p:nth-last-child(2), p:last-child {
   text-decoration: line-through;
 }
 

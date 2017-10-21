@@ -194,12 +194,26 @@ body {
   background: slategray;
   border-radius: 10px;
 }
+
 #main > * {
   margin: 10px;
   padding: 10px;
 }
 
 /* Header */
+#banner {
+  text-align:center;
+  font-size: x-large;
+}
+#banner > * {
+  border: 1px solid black;
+  background: goldenrod;
+  padding: 5px;
+}
+#banner p:last-child {
+  text-decoration: line-through;
+}
+
 #title {
   font-family: "Muli", sans-serif;
   font-size: 5em;
@@ -374,7 +388,7 @@ button {
 }
 
 /* Footer */
-footer {
+#footer {
   display: flex;
   justify-content: space-between;
   align-items: center;

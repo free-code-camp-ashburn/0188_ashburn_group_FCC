@@ -202,16 +202,15 @@ body {
 
 /* Header */
 #banner {
-  text-align:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: x-large;
-}
-#banner > * {
   border: 1px solid black;
   background: goldenrod;
-  padding: 5px;
 }
-#banner p:nth-last-child(2), #banner p:last-child {
-  text-decoration: line-through;
+#banner p {
+  padding-right: 5em;
 }
 
 #title {

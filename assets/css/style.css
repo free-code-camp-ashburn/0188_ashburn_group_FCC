@@ -175,7 +175,7 @@ template {
 }
 
 * {
-  box-sizing: boder-box;
+  box-sizing: border-box;
 }
 
 html,
@@ -238,7 +238,7 @@ body {
   color: lightgoldenrodyellow;
   font-size: 1.5em;
   text-align: center;
-  list-style-type: none;
+  list-style: none;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
 }
@@ -305,16 +305,16 @@ button {
   display: none;
 }
 
-/* Flock */
+/* Messenger */
 #accordion-1 {
   background: lightgreen;
 }
-#flock {
+#messenger {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-#flock > * {
+#messenger > * {
   margin: 10px;
   padding: 10px;
 }

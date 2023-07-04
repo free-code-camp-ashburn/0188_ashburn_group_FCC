@@ -356,7 +356,7 @@ button {
 /* Members */
 .member__wrappper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 1.5em;
 }
 
